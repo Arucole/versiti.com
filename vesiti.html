@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-------- head -------->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="15x15"
+      href="./Images/favicon_io/favicon-32x32.png"
+    />
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/query.css" />
+    <title>Vesiti.com</title>
+  </head>
+  <body>
+    <div id="container">
+        <header>
+            <div class="head">
+                <div class="logo">
+                    <img class="company-logo" src="/Images/Vasiti-Logo.svg" alt="company_logo"/>
+                </div>
+                <div class="nav">
+                   <ul class="nav-menu">
+                    <li class="nav-list">About Us</li>
+                    <li class="nav-list" id="myBtn">Stories</li><!---open modal-->
+                    <li class="nav-list">Contact</li>
+                    <li class="nav-list">Log In</li>
+                   </ul>
+                   <div class="hamburger shade">
+                    <div class="bar hide"></div>
+                    <div class="bar hide"></div>
+                    <div class="bar hide"></div>
+                </div>
+                   <button class="head-btn">Sign up</button>
+                </div>
+            </div>
+        </header>
+        <nav class="sub-head">
+          <ul>
+            <li>MarketPlace</li>
+            <li>Wholesale Center</li>
+            <li>Seller Center</li>
+            <li>Services</li>
+            <li>Internships</li>
+            <li>Events</li>
+          </ul>
+        </nav>
+        <!---modal section---->
+        <div id="myModal" class="modal">
+          <!--modal content-->
+          <div class="modal-card">
+              <div class="modalheader">
+              <h4>Share your amazing story!</h4>
+              <span class="close">&times;</span>
+              </div>
+              <div class="pictures">
+                <label class="small" for="InputTag">
+                  Upload your picture
+                <span class="cover"><input type="file" placeholder="Choose Image" id="InputTag" required> <span class="material-symbols-outlined">
+                  attach_file
+                  </span></span>
+               </label>
+             </div>
+              <div class="form-flex">
+                  <label class="small1" for="firstname">
+                    First Name
+                  <input type="text" id="firstname" required>
+                 </label>
+                  <label class="small2" for="lastname">
+                    Last Name
+                  <input type="text" id="lastname" required>
+                 </label>
+              </div>
+              <div class="flow">
+                <label class="small3">
+                  Share your story
+                 <textarea  id="message"></textarea>
+                </label>
+             </div>
+              <div class="question">
+                <p>What do you interact with Vasiti as?</p>
+                <input type="radio">
+                <label class="tag">Customer</label>
+                <input type="radio">
+                <label class="tag">Vendor</label>
+            </div>
+            <button class="modal-btn">Share your story!</button>
+          </div> 
+          <!-- <div class="second-Modal-Card">
+             <img class="baloons" src="/Images/ThankyouImg.svg" alt="Celebratory_Imaage" />
+             <h5>Thank you for <br> sharing your story!</h5>
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas excepturi reprehenderit autem eum quia natus? Dolores molestias voluptate est facilis magni.</p>
+             <button>close</button>
+          </div>-->
+        </div> 
+        <!--modal section---->
+       <section class="hero-section">
+            <div class="notes">
+              <h3>Amazing<br> Experiences from Our Wonderful Customers</h3>
+              <p>Here is what customers and vendors are saying about us,
+                 you can share your stories with us too.</p>
+            </div>
+            <div class="image">
+              <img class="hero-img" src="/Images/Testimonial-image-hero.svg" alt="Customers_Image"/>
+            </div>
+        </section>
+         <section>
+            <div class="stories">
+                <div class="pic">
+                    <img class="circle" src="/Images/circle-behind-tolu.svg" alt="circle_silhouette"/>
+                    <img class="tolu" src="/Images/tolu&joy.svg" alt="happy_customers"/>
+                </div>
+                <div class="TJ">
+                    <h4>Tolu & Joy’s Experience</h4>
+                    <button>customer</button>
+                    <p class="graph">I had the best experience shopping with vasiti. 
+                     Usability of the website was great, very good customer service,
+                     an all round great experience. I would definately be coming back! 
+                    I had the best experience shopping with vasiti. Usability of the website was great, 
+                    very good customer service, an all round great experience.
+                     I would definately be coming back!</p>
+                     <p class="share">Share your own story!</p>
+                     <img class="line" src="/Images/lineunderneth.svg" alt="line">
+                </div>
+            </div>
+       </section>
+         <section>
+            <div class="testimonies">
+              <div class="unwrapped-card">
+                <img class="profile-img" src="/Images/joseph Ike.svg" alt="Joseph's_Image"/>
+                <p class="name">Joseph Ike</p>
+                <p class="location">In Ikeja <span><button>customer</button></span></p>
+                <p class="about">Aliqua id fugiat nostrud irure 
+                    ex duis ea quis id quis ad et. Sunt qui esse pariatur 
+                    duis deserunt mollit dolore cillum minim tempor enim. 
+                    Elit aute irure tempor cupidatat incididunt sint deserunt
+                     ut voluptate aute id deserunt nisi. Aliqua id fugiat 
+                     nostrud irure ex duis ea quis id quis ad et.
+                     Sunt qui esse pariatur duis deserunt
+                     mollit dolore cillum minim tempor enim.</p>
+              </div>
+              <div class="unwrapped-card">
+                <img class="profile-img" src="/Images/Adetola.svg" alt="Adetola's_Image"/>
+                <p class="name">Adetola Fashina</p>
+                <p class="location">Ibadan <span><button>customer</button></span></p>
+                <p class="about">Aliqua id fugiat nostrud irure 
+                    ex duis ea quis id quis ad et. Sunt qui esse pariatur 
+                    duis deserunt mollit dolore cillum minim tempor enim. 
+                    Elit aute irure tempor cupidatat incididunt sint deserunt
+                     ut voluptate aute id deserunt nisi. Aliqua id fugiat 
+                     nostrud irure ex duis ea quis id quis ad et.
+                     Sunt qui esse pariatur duis deserunt
+                     mollit dolore cillum minim tempor enim.</p>
+              </div>
+              <div class="unwrapped-card">
+                <img class="profile-img" src="/Images/EmmanuelFayemi.svg" alt="Emmanuel's_Image"/>
+                <p class="name">Emmanuel Fayemi</p>
+                <p class="location">In Akoka <span><button>customer</button></span></p>
+                <p class="about">Aliqua id fugiat nostrud irure 
+                    ex duis ea quis id quis ad et. Sunt qui esse pariatur 
+                    duis deserunt mollit dolore cillum minim tempor enim. 
+                    Elit aute irure tempor cupidatat incididunt sint deserunt
+                     ut voluptate aute id deserunt nisi. Aliqua id fugiat 
+                     nostrud irure ex duis ea quis id quis ad et.
+                     Sunt qui esse pariatur duis deserunt
+                     mollit dolore cillum minim tempor enim.</p>
+              </div>
+            </div>
+        </section>
+       <section>
+            <div class="testimonies">
+                <div class="unwrapped-card">
+                    <img class="profile-img" src="/Images/ChisomObilor.svg" alt="Chisom's_Image"/>
+                    <p class="name">Chisom Obilor</p>
+                    <p class="location2">In Magodo <span><button>vendor</button></span></p>
+                    <p class="about">Aliqua id fugiat nostrud irure 
+                        ex duis ea quis id quis ad et. Sunt qui esse pariatur 
+                        duis deserunt mollit dolore cillum minim tempor enim. 
+                        Elit aute irure tempor cupidatat incididunt sint deserunt
+                         ut voluptate aute id deserunt nisi. Aliqua id fugiat 
+                         nostrud irure ex duis ea quis id quis ad et.
+                         Sunt qui esse pariatur duis deserunt
+                         mollit dolore cillum minim tempor enim.</p>
+                </div>
+                <div class="unwrapped-card">
+                    <img class="profile-img" src="/Images/AdunoluwaAdeyemi.svg" alt="Adeyemi's_Image"/>
+                    <p class="name">Adunoluwa Adeyemi</p>
+                    <p class="location2">Iwo Road <span><button>vendor</button></span></p>
+                    <p class="about">Aliqua id fugiat nostrud irure 
+                        ex duis ea quis id quis ad et. Sunt qui esse pariatur 
+                        duis deserunt mollit dolore cillum minim tempor enim. 
+                        Elit aute irure tempor cupidatat incididunt sint deserunt
+                         ut voluptate aute id deserunt nisi. Aliqua id fugiat 
+                         nostrud irure ex duis ea quis id quis ad et.
+                         Sunt qui esse pariatur duis deserunt
+                         mollit dolore cillum minim tempor enim.</p>
+                </div>
+                <div class="unwrapped-card">
+                    <img class="profile-img" src="/Images/ChidiOkeke.svg" alt="Chidi's_Image"/>
+                    <p class="name">Chidi Okeke</p>
+                    <p class="location2">In Somolu <span><button>vendor</button></span></p>
+                    <p class="about">Aliqua id fugiat nostrud irure 
+                        ex duis ea quis id quis ad et. Sunt qui esse pariatur 
+                        duis deserunt mollit dolore cillum minim tempor enim. 
+                        Elit aute irure tempor cupidatat incididunt sint deserunt
+                         ut voluptate aute id deserunt nisi. Aliqua id fugiat 
+                         nostrud irure ex duis ea quis id quis ad et.
+                         Sunt qui esse pariatur duis deserunt
+                         mollit dolore cillum minim tempor enim.</p>
+                </div>
+            </div>
+        </section> 
+      <section>
+            <div class="experience">
+               <div class="tails">
+                <h5>Josiah’s Experience</h5>
+                <button>vendor</button>
+                <p class="talk">I had the best experience shopping with vasiti.
+                 Usability of the website was great, very good 
+                 customer service, an all round great experience. 
+                 I would definately be coming back! I had the best 
+                 experience shopping with vasiti. Usability of the
+                  website was great, very good customer service, 
+                  an all round great experience.
+                   I would definately be coming back!</p>
+                   <p class="own">Share your own story!</p>
+                   <img class="second-line" src="/Images/lineunderneth.svg" alt="line"/>
+               </div>
+               <div class="experience-img">
+                 <img class="expo-img" src="/Images/woman-shoppingbag-card.svg" alt="happy_customer_image"/>
+               </div>
+            </div>
+        </section>
+          <section>
+            <div class="testimonies">
+                <div class="unwrapped-cards">
+                    <img class="profile-img" src="/Images/TemiObadofin.svg" alt="Temi's_Image"/>
+                    <p class="name">Temi Obadofin</p>
+                    <button class="locate">vendor</button>
+                    <p class="about">Aliqua id fugiat nostrud irure 
+                        ex duis ea quis id quis ad et. Sunt qui esse pariatur 
+                        duis deserunt mollit dolore cillum minim tempor enim. 
+                        Elit aute irure tempor cupidatat incididunt sint deserunt
+                         ut voluptate aute id deserunt nisi. Aliqua id fugiat 
+                         nostrud irure ex duis ea quis id quis ad et.
+                         Sunt qui esse pariatur duis deserunt
+                         mollit dolore cillum minim tempor enim.</p>
+                </div>
+                <div class="unwrapped-cards">
+                    <img class="profile-img" src="/Images/promiseEjiofor.svg" alt="Ejiofor's_Image"/>
+                    <p class="name">Promise Ejiofor</p>
+                    <button class="locate">vendor</button>
+                    <p class="about">Aliqua id fugiat nostrud irure 
+                        ex duis ea quis id quis ad et. Sunt qui esse pariatur 
+                        duis deserunt mollit dolore cillum minim tempor enim. 
+                        Elit aute irure tempor cupidatat incididunt sint deserunt
+                         ut voluptate aute id deserunt nisi. Aliqua id fugiat 
+                         nostrud irure ex duis ea quis id quis ad et.
+                         Sunt qui esse pariatur duis deserunt
+                         mollit dolore cillum minim tempor enim.</p>
+                </div>
+                <div class="unwrapped-cards">
+                    <img class="profile-img" src="/Images/FeyisolaArinola.svg" alt="Feyisola's_Image"/>
+                    <p class="name">Feyisola Arinola</p>
+                    <button class="locate">vendor</button>
+                    <p class="about">Aliqua id fugiat nostrud irure 
+                        ex duis ea quis id quis ad et. Sunt qui esse pariatur 
+                        duis deserunt mollit dolore cillum minim tempor enim. 
+                        Elit aute irure tempor cupidatat incididunt sint deserunt
+                         ut voluptate aute id deserunt nisi. Aliqua id fugiat 
+                         nostrud irure ex duis ea quis id quis ad et.
+                         Sunt qui esse pariatur duis deserunt
+                         mollit dolore cillum minim tempor enim.</p>
+                </div>
+            </div>
+        </section>
+          <section>
+            <div class="testimonies">
+                <div class="unwrapped-cards">
+                    <img class="profile-img" src="/Images/KarenIbeh.svg" alt="Karen's_Image"/>
+                    <p class="name">Karen Ibeh</p>
+                    <button class="locate">vendor</button>
+                    <p class="about">Aliqua id fugiat nostrud irure 
+                        ex duis ea quis id quis ad et. Sunt qui esse pariatur 
+                        duis deserunt mollit dolore cillum minim tempor enim. 
+                        Elit aute irure tempor cupidatat incididunt sint deserunt
+                         ut voluptate aute id deserunt nisi. Aliqua id fugiat 
+                         nostrud irure ex duis ea quis id quis ad et.
+                         Sunt qui esse pariatur duis deserunt
+                         mollit dolore cillum minim tempor enim.</p>
+                </div>
+                <div class="unwrapped-cards">
+                    <img class="profile-img" src="/Images/OluchiUzo.svg" alt="Oluchi's_Image"/>
+                    <p class="name">Oluchi Uzo</p>
+                    <button class="locate">vendor</button>
+                    <p class="about">Aliqua id fugiat nostrud irure 
+                        ex duis ea quis id quis ad et. Sunt qui esse pariatur 
+                        duis deserunt mollit dolore cillum minim tempor enim. 
+                        Elit aute irure tempor cupidatat incididunt sint deserunt
+                         ut voluptate aute id deserunt nisi. Aliqua id fugiat 
+                         nostrud irure ex duis ea quis id quis ad et.
+                         Sunt qui esse pariatur duis deserunt
+                         mollit dolore cillum minim tempor enim.</p>
+                </div>
+                <div class="unwrapped-cards">
+                    <img class="profile-img" src="/Images/AmosOkafor.svg" alt="Amos's_Image"/>
+                    <p class="name">Amos Okafor</p>
+                    <button class="locate">vendor</button>
+                    <p class="about">Aliqua id fugiat nostrud irure 
+                        ex duis ea quis id quis ad et. Sunt qui esse pariatur 
+                        duis deserunt mollit dolore cillum minim tempor enim. 
+                        Elit aute irure tempor cupidatat incididunt sint deserunt
+                         ut voluptate aute id deserunt nisi. Aliqua id fugiat 
+                         nostrud irure ex duis ea quis id quis ad et.
+                         Sunt qui esse pariatur duis deserunt
+                         mollit dolore cillum minim tempor enim.</p>
+                </div>
+            </div>
+        </section>
+          <footer>
+            <div class="upper-foot">
+               <div class="foot-img">
+                <img class="phone" src="/Images/subscribe-banner.svg" alt="Cell_phone_img"/>
+               </div>
+               <div class="member">
+                 <p class="community">Be a member of our community🎉</p>
+                 <p class="we">We’d make sure you’re always first to know what’s happening on Vasiti—thus, the world.</p>
+                 <input class="typein" type="email" placeholder="enter your email address" required><span><button class="tag-click">Subscribe</button></span>
+               </div> 
+            </div>
+         
+          <div class="lower-foot">
+            <div class="footBreak">
+              <div class="ft1">
+                 <ul>
+                    <li class="bold">Company</li>
+                    <li>About us</li>
+                    <li>Term of Use</li>
+                    <li>Privacy Policy</li>
+                    <li>Press & Media</li>
+                 </ul>
+              </div>
+              <div class="ft2">
+                 <ul>
+                   <li class="bold">Products</li>
+                   <li>Marketplace</li>
+                   <li>Magazine</li>
+                   <li>Seller</li>
+                   <li>Wholesale</li>
+                   <li>Services</li>
+                 </ul>
+             </div>
+            </div> 
+            <div class="footbreak2">
+             <div class="ft3">
+                 <ul>
+                    <li class="bold">Careers</li>
+                    <li>Become a Campus Rep</li>
+                    <li>Become a Vasiti Influencer</li>
+                    <li>Become a Campus writer</li>
+                    <li>Become an Affiliate</li>
+                 </ul>
+            </div>
+            <div class="ft3">
+                <ul>
+                   <li class="bold">Get in touch</li>
+                   <li>Contact us</li>
+                   <li>Partner with us</li>
+                   <li>Advertise with us</li>
+                   <li>Help/FAQs</li>
+                </ul>
+           </div>
+          </div>
+           <div class="footer-last">
+                <p class="our">Join our community</p>
+                <a href="https://www.facebook.com"><img class="socials" src="/Images/fb.svg" alt="facebook_logo"/></a>
+                <a href="https://www.instagram.com"><img class="socials" src="/Images/ig.svg" alt="instagram_logo"/></a>
+                <a href="https://www.twitter.com"><img class="socials" src="/Images/tw.svg" alt="twitter_logo"/></a>
+                <a href="https://www.linkedin.com"><img class="socials" src="/Images/in.svg" alt="linkedin_logo"/></a>
+                <p class="mail">Email Newsletter</p>
+           </div>
+        </div>
+    </footer> 
+    <script src="/script.js" type="module"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js"></script> -->
+  </body>
+</html>

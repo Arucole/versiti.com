@@ -1,0 +1,1020 @@
+/* 320px to 480px
+ 481px to 768px
+ 769px to 1024px
+ 1025px to 1200px */
+
+@media only screen and (max-width: 1270px) and (min-width: 1200px) {
+  .experience {
+    height: 490px;
+  }
+  .tails {
+    margin-top: 125px;
+  }
+  .expo-img {
+    height: 440px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .sub-head li {
+    font-size: 10px;
+    margin: 15px 20px;
+  }
+  /* ------hero section-------- */
+  .notes h3 {
+    font-size: 27px;
+    width: 270px;
+  }
+  .notes p {
+    font-size: 14px;
+    width: 240px;
+    line-height: 1.5rem;
+  }
+  .hero-img {
+    height: 28rem;
+  }
+  /* ------stories section------- */
+  .stories {
+    height: 470px;
+  }
+  .circle {
+    height: 25rem;
+  }
+  .tolu {
+    height: 25rem;
+  }
+  .TJ {
+    margin-left: 400px;
+    height: 20rem;
+  }
+  .TJ h4 {
+    font-size: 19px;
+  }
+  .graph {
+    font-size: 12px;
+  }
+  .share {
+    font-size: 12px;
+  }
+  .line {
+    width: 160px;
+  }
+  /* ------flex cards-------- */
+  .testimonies {
+    padding: 5em 0 4em 4em;
+  }
+  .profile-img {
+    height: 9em;
+  }
+  /* ------expo break------- */
+  .experience {
+    height: 400px;
+  }
+  .tails {
+    margin-top: 125px;
+  }
+  .tails h5 {
+    font-size: 20px;
+  }
+  .talk {
+    font-size: 12px;
+    max-width: 300px;
+  }
+  .own {
+    font-size: 15px;
+  }
+  .second-line {
+    width: 200px;
+  }
+  .expo-img {
+    margin-top: 3rem;
+    height: 320px;
+  }
+  /* ---footer designs----- */
+  .we {
+    font-size: 13px;
+    max-width: 280px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .head {
+    padding: 1.5em 3em;
+  }
+  .sub-head li {
+    display: none;
+  }
+  /* --------hero section-------*/
+  .notes h3 {
+    font-size: 27px;
+    width: 270px;
+  }
+  .notes p {
+    font-size: 14px;
+    width: 240px;
+    line-height: 1.5rem;
+  }
+  .hero-img {
+    height: 20rem;
+    margin-bottom: 2em;
+  }
+  /* --------Stories section------- */
+  .pic {
+    margin-left: -35px;
+    padding: 2em 0 3em 3em;
+  }
+  .stories {
+    margin-top: -5.2rem;
+    height: 360px;
+  }
+  .circle {
+    height: 18rem;
+  }
+  .tolu {
+    height: 18rem;
+  }
+  .TJ {
+    padding: 2em 2em 3em 4em;
+    margin-top: -40px;
+    height: 20rem;
+  }
+  .TJ h4 {
+    font-size: 14px;
+  }
+  .graph {
+    font-size: 9px;
+    max-width: 220px;
+  }
+  .share {
+    font-size: 9px;
+  }
+  .line {
+    width: 138px;
+  }
+  /* -------flex cards-------- */
+  .testimonies {
+    padding: 5em 5em 5em 5em;
+  }
+  .name {
+    font-size: 15px;
+  }
+  .location {
+    font-size: 14px;
+  }
+  .location button {
+    font-size: 11px;
+  }
+  .about {
+    font-size: 14px;
+    max-width: 170px;
+  }
+  .profile-img {
+    height: 7rem;
+  }
+  /* ------flex card l2----- */
+  .location2 {
+    font-size: 14px;
+  }
+  .location2 button {
+    font-size: 11px;
+  }
+  /* ------expo break------- */
+  .experience {
+    padding: 2em 0 4em 4em;
+    height: 300px;
+  }
+  .tails {
+    margin-top: 100px;
+  }
+  .tails h5 {
+    font-size: 15px;
+  }
+  .tails button {
+    max-width: 50px;
+    font-size: 10px;
+  }
+  .talk {
+    font-size: 9px;
+    max-width: 260px;
+    line-height: 1em;
+  }
+  .own {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .second-line {
+    width: 180px;
+  }
+  .expo-img {
+    margin-top: 4rem;
+    height: 200px;
+  }
+  /* ------footer designs------- */
+  .upper-foot {
+    padding: 2em 3em 2em 3em;
+    height: 250px;
+    margin-top: 3rem;
+  }
+  .foot-img {
+    padding: 0 2em;
+    margin-top: 2rem;
+  }
+  .phone {
+    position: relative;
+    margin-bottom: 1rem;
+    margin-left: 5em;
+    height: 240px;
+  }
+  .member {
+    margin-top: 1rem;
+    margin-right: 5rem;
+  }
+  .community {
+    font-size: 20px;
+    max-width: 180px;
+  }
+  .we {
+    font-size: 12px;
+    max-width: 250px;
+  }
+  .typein {
+    height: 2rem;
+    margin: 2px 0;
+    font-size: 9px;
+    width: 140px;
+  }
+  .tag-click {
+    height: 2.3rem;
+    max-width: 80px;
+  }
+  /* ----lower footer---------- */
+  .lower-foot {
+    padding: 3em 8em;
+    height: 410px;
+  }
+
+  .ft1 li,
+  .ft2 li,
+  .ft3 li,
+  .ft4 li {
+    font-size: 9px;
+  }
+  .ft1 .bold,
+  .ft2 .bold,
+  .ft3 .bold,
+  .ft4 .bold {
+    font-size: 12px;
+  }
+  .our {
+    font-size: 12px;
+  }
+  .mail {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .head-btn {
+    display: none;
+  }
+  .head {
+    padding: 1.5em 3em;
+  }
+  .bar {
+    display: block;
+  }
+  /* ----------bar animation---------- */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgb(165, 163, 163);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-list {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+  /* --------sub head---------- */
+  .sub-head {
+    display: none;
+  }
+  /* ---------hero section-------- */
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0 3em 3em;
+    margin: auto;
+  }
+  .notes h3 {
+    font-size: 27px;
+  }
+  .notes p {
+    font-size: 14px;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .hero-img {
+    height: 28rem;
+  }
+  /* --------Stories Section-------- */
+  .stories {
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 850px;
+  }
+  .TJ {
+    padding: 2em 0 3em 3em;
+    margin-left: -34px;
+    margin-top: -3rem;
+  }
+  .TJ h4 {
+    font-size: 15px;
+  }
+  .graph {
+    font-size: 10px;
+    max-width: 220px;
+  }
+
+  .pic {
+    margin-left: -24rem;
+    margin-bottom: 11.5rem;
+  }
+
+  .circle {
+    height: 17rem;
+  }
+  .tolu {
+    height: 17rem;
+  }
+  /* ------flex cards-------- */
+  .testimonies {
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+    padding: 5em 5em 5em 5em;
+  }
+  .name {
+    font-size: 15px;
+  }
+  .location {
+    font-size: 14px;
+  }
+  .location button {
+    font-size: 11px;
+  }
+  .about {
+    font-size: 14px;
+    max-width: 180px;
+  }
+  .unwrapped-card {
+    margin-top: 2rem;
+  }
+  .profile-img {
+    height: 10rem;
+  }
+  /* ------flex card l2----- */
+  .location2 {
+    font-size: 14px;
+  }
+  .location2 button {
+    font-size: 11px;
+  }
+  /* ------expo break------- */
+  .experience {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0 3em 3em;
+    height: 600px;
+  }
+  .tails {
+    margin-top: 100px;
+  }
+  .tails h5 {
+    font-size: 15px;
+  }
+  .tails button {
+    padding: 5px 5px;
+    max-width: 50px;
+    font-size: 9px;
+  }
+  .talk {
+    font-size: 10px;
+    max-width: 200px;
+    line-height: 1em;
+  }
+  .own {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .second-line {
+    width: 180px;
+  }
+  .expo-img {
+    margin-top: 3rem;
+    height: 180px;
+  }
+  /* ------footer designs------- */
+  .upper-foot {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0 3em 3em;
+    height: 600px;
+    margin-top: 3rem;
+  }
+  .foot-img {
+    padding: 0 2em;
+    margin-top: 2rem;
+  }
+  .phone {
+    position: relative;
+    margin-bottom: 1rem;
+    margin-left: 1em;
+    height: 220px;
+  }
+  .member {
+    margin-top: -2rem;
+    margin-right: -1rem;
+  }
+  .community {
+    font-size: 18px;
+    max-width: 160px;
+  }
+  .we {
+    font-size: 10px;
+    max-width: 220px;
+  }
+  .typein {
+    height: 2rem;
+    margin: 2px 0;
+    font-size: 9px;
+    width: 120px;
+  }
+  .tag-click {
+    height: 2.3rem;
+    max-width: 70px;
+    font-size: 12px;
+  }
+  /* ----lower footer---------- */
+  .lower-foot {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+    padding: 2em 8em;
+    height: 650px;
+  }
+
+  .footBreak,
+  .footbreak2 {
+    padding: 0 1.5em;
+  }
+
+  .ft1 li,
+  .ft2 li,
+  .ft3 li,
+  .ft4 li {
+    font-size: 9px;
+  }
+  .ft1 .bold,
+  .ft2 .bold,
+  .ft3 .bold,
+  .ft4 .bold {
+    font-size: 12px;
+  }
+  .our {
+    font-size: 12px;
+  }
+  .mail {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .head-btn {
+    display: none;
+  }
+  .head {
+    padding: 1.5em 3em;
+  }
+  .bar {
+    display: block;
+  }
+  .sub-head {
+    display: none;
+  }
+  /* ----------bar animation---------- */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-list {
+    margin: 16px 0;
+  }
+  /* --------hero section-------- */
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0 3em 3em;
+    margin: auto;
+  }
+  .notes h3 {
+    font-size: 20px;
+  }
+  .notes p {
+    font-size: 14px;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .hero-img {
+    max-height: 18rem;
+  }
+  /* --------Stories section-------- */
+  .stories {
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 700px;
+    padding: 2em 2em 1em 1em;
+  }
+  .TJ {
+    align-items: center;
+    justify-content: center;
+    padding: 2em 1em 0.5em 4em;
+    margin-left: -20px;
+    margin-top: -6rem;
+  }
+  .TJ h4 {
+    font-size: 12px;
+  }
+  .TJ button {
+    margin-left: 55px;
+    font-size: 10px;
+    width: 60px;
+  }
+  .graph {
+    font-size: 9px;
+    max-width: 150px;
+  }
+
+  .pic {
+    margin-left: -12rem;
+    margin-bottom: 12rem;
+    padding: 1em 0 0.5em 0.5em;
+  }
+
+  .share {
+    font-size: 11px;
+  }
+
+  .line {
+    width: 150px;
+    padding-left: 50px;
+  }
+
+  .circle {
+    height: 12rem;
+  }
+  .tolu {
+    height: 12rem;
+  }
+  /* ------flex cards-------- */
+  .testimonies {
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+    padding: 5em 2em 5em 5em;
+  }
+  .name {
+    font-size: 14px;
+  }
+  .location {
+    font-size: 13px;
+  }
+  .location button {
+    font-size: 11px;
+  }
+  .about {
+    font-size: 13px;
+    max-width: 150px;
+  }
+  .unwrapped-card {
+    margin-top: 2rem;
+  }
+  .profile-img {
+    height: 9rem;
+  }
+  /* ------flex card l2----- */
+  .location2 {
+    font-size: 13px;
+  }
+  .location2 button {
+    font-size: 11px;
+  }
+  /* ------expo break------- */
+  .experience {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10rem;
+    padding: 2em 0 3em 3em;
+    height: 550px;
+  }
+  .tails {
+    margin-left: 8rem;
+    margin-top: 100px;
+  }
+  .tails h5 {
+    font-size: 14px;
+  }
+  .tails button {
+    padding: 5px 5px;
+    max-width: 50px;
+    font-size: 9px;
+  }
+  .talk {
+    font-size: 10px;
+    max-width: 150px;
+    line-height: 1em;
+  }
+  .own {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .second-line {
+    width: 150px;
+  }
+  .experience-img {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .expo-img {
+    margin-top: 1rem;
+    height: 130px;
+    padding: 1em 5em 0 13em;
+  }
+  /* ------footer designs------- */
+  .upper-foot {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0 3em 3em;
+    height: 600px;
+    margin-top: 3rem;
+  }
+  .foot-img {
+    padding: 0 2em;
+    margin-top: 2rem;
+  }
+  .phone {
+    position: relative;
+    margin-bottom: 1rem;
+    margin-left: -1em;
+    height: 180px;
+  }
+  .member {
+    margin-top: -2rem;
+    margin-right: -1rem;
+  }
+  .community {
+    font-size: 18px;
+    max-width: 160px;
+  }
+  .we {
+    font-size: 10px;
+    max-width: 200px;
+  }
+  .typein {
+    height: 2rem;
+    margin: 2px 0;
+    font-size: 9px;
+    width: 100px;
+  }
+  .tag-click {
+    height: 2.3rem;
+    max-width: 70px;
+    font-size: 12px;
+  }
+  /* ----lower footer---------- */
+  .lower-foot {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+    padding: 2em 8em;
+    height: 700px;
+  }
+
+  .footBreak,
+  .footbreak2 {
+    padding: 0 1.5em;
+  }
+
+  .ft1 li,
+  .ft2 li,
+  .ft3 li,
+  .ft4 li {
+    font-size: 9px;
+  }
+  .ft1 .bold,
+  .ft2 .bold,
+  .ft3 .bold,
+  .ft4 .bold {
+    font-size: 12px;
+  }
+  /* .footer-last {
+    padding: 0 em;
+  } */
+  .our {
+    font-size: 10px;
+  }
+  .socials {
+    height: 13px;
+  }
+  .mail {
+    margin-top: 10px;
+    font-size: 9px;
+  }
+}
+
+@media only screen and (max-width: 319px) {
+  .head-btn {
+    display: none;
+  }
+  .head {
+    padding: 1.5em 3em;
+  }
+  .bar {
+    display: block;
+  }
+  .sub-head {
+    display: none;
+  }
+
+  /* ----------bar animation---------- */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-list {
+    margin: 16px 0;
+  }
+  /* --------hero section-------- */
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0 3em 3em;
+    margin: auto;
+  }
+  .notes h3 {
+    font-size: 15px;
+  }
+  .notes p {
+    font-size: 10px;
+    line-height: 1.5rem;
+  }
+  .hero-img {
+    max-height: 13rem;
+  }
+  /* --------Stories section-------- */
+  .stories {
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 700px;
+    padding: 2em 2em 1em 1em;
+  }
+  .TJ {
+    align-items: center;
+    justify-content: center;
+    padding: 2em 1em 0.5em 4em;
+    margin-left: -20px;
+    margin-top: -6rem;
+  }
+  .TJ h4 {
+    font-size: 12px;
+  }
+  .TJ button {
+    margin-left: 55px;
+    font-size: 10px;
+    width: 60px;
+  }
+  .graph {
+    font-size: 9px;
+    max-width: 150px;
+  }
+
+  .pic {
+    margin-left: -12rem;
+    margin-bottom: 12rem;
+    padding: 1em 0 0.5em 0.5em;
+  }
+
+  .share {
+    font-size: 11px;
+  }
+
+  .line {
+    width: 150px;
+    padding-left: 50px;
+  }
+
+  .circle {
+    height: 12rem;
+  }
+  .tolu {
+    height: 12rem;
+  }
+  /* ------flex cards-------- */
+  .testimonies {
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+    padding: 5em 2em 5em 5em;
+  }
+  .name {
+    font-size: 13px;
+  }
+  .location {
+    font-size: 13px;
+  }
+  .location button {
+    font-size: 11px;
+  }
+  .about {
+    font-size: 13px;
+    max-width: 150px;
+  }
+  .unwrapped-card {
+    margin-top: 2rem;
+  }
+  .profile-img {
+    height: 8rem;
+  }
+  /* ----flex card l2----- */
+  .location2 {
+    font-size: 13px;
+  }
+  .location2 button {
+    font-size: 11px;
+  }
+  /* ------expo break------- */
+  .experience {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10rem;
+    padding: 2em 0 3em 3em;
+    height: 550px;
+  }
+  .tails {
+    margin-left: 8rem;
+    margin-top: 100px;
+  }
+  .tails h5 {
+    font-size: 14px;
+  }
+  .tails button {
+    padding: 5px 5px;
+    max-width: 50px;
+    font-size: 9px;
+  }
+  .talk {
+    font-size: 10px;
+    max-width: 150px;
+    line-height: 1em;
+  }
+  .own {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .second-line {
+    width: 150px;
+  }
+  .experience-img {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .expo-img {
+    margin-top: 1rem;
+    height: 130px;
+    padding: 1em 5em 0 13em;
+  }
+  /* ------footer designs------- */
+  .upper-foot {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0 3em 3em;
+    height: 600px;
+    margin-top: 3rem;
+  }
+  .foot-img {
+    padding: 0 2em;
+    margin-top: 2rem;
+  }
+  .phone {
+    position: relative;
+    margin-bottom: 1rem;
+    margin-left: -1em;
+    height: 180px;
+  }
+  .member {
+    margin-top: -2rem;
+    margin-right: -1rem;
+  }
+  .community {
+    font-size: 18px;
+    max-width: 160px;
+  }
+  .we {
+    font-size: 10px;
+    max-width: 200px;
+  }
+  .typein {
+    height: 2rem;
+    margin: 2px 0;
+    font-size: 9px;
+    width: 100px;
+  }
+  .tag-click {
+    height: 2.3rem;
+    max-width: 70px;
+    font-size: 12px;
+  }
+  /* ----lower footer---------- */
+  .lower-foot {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+    padding: 2em 8em;
+    height: 700px;
+  }
+
+  .footBreak,
+  .footbreak2 {
+    padding: 0 1.5em;
+  }
+
+  .ft1 li,
+  .ft2 li,
+  .ft3 li,
+  .ft4 li {
+    font-size: 9px;
+  }
+  .ft1 .bold,
+  .ft2 .bold,
+  .ft3 .bold,
+  .ft4 .bold {
+    font-size: 12px;
+  }
+  /* .footer-last {
+      padding: 0 em;
+    } */
+  .our {
+    font-size: 10px;
+  }
+  .socials {
+    height: 13px;
+  }
+  .mail {
+    margin-top: 10px;
+    font-size: 9px;
+  }
+}
