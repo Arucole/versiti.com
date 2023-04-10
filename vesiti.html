@@ -13,8 +13,8 @@
     />
 
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link rel="stylesheet" href="/styles/styles.css" />
-    <link rel="stylesheet" href="/styles/query.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/query.css" />
     <title>Vesiti.com</title>
   </head>
   <body>
@@ -22,7 +22,7 @@
         <header>
             <div class="head">
                 <div class="logo">
-                    <img class="company-logo" src="/Images/Vasiti-Logo.svg" alt="company_logo"/>
+                    <img class="company-logo" src="./Images/Vasiti-Logo.svg" alt="company_logo"/>
                 </div>
                 <div class="nav">
                    <ul class="nav-menu">
@@ -58,46 +58,49 @@
               <h4>Share your amazing story!</h4>
               <span class="close">&times;</span>
               </div>
-              <div class="pictures">
-                <label class="small" for="InputTag">
-                  Upload your picture
-                <span class="cover"><input type="file" placeholder="Choose Image" id="InputTag" required> <span class="material-symbols-outlined">
-                  attach_file
-                  </span></span>
-               </label>
-             </div>
-              <div class="form-flex">
-                  <label class="small1" for="firstname">
-                    First Name
-                  <input type="text" id="firstname" required>
+              <form id="myForm">
+                <div class="pictures">
+                  <label class="small" for="InputTag">
+                    Upload your picture
+                  <span class="cover"><input type="file" placeholder="Choose Image" id="InputTag" accept="image/*" required> <span class="material-symbols-outlined">
+                    attach_file
+                    </span></span>
                  </label>
-                  <label class="small2" for="lastname">
-                    Last Name
-                  <input type="text" id="lastname" required>
-                 </label>
+               </div>
+                <div class="form-flex">
+                    <label class="small1" for="firstname">
+                      First Name
+                    <input type="text" id="firstname" required>
+                   </label>
+                    <label class="small2" for="lastname">
+                      Last Name
+                    <input type="text" id="lastname" required>
+                   </label>
+                </div>
+                <div class="flow">
+                  <label class="small3">
+                    Share your story
+                   <textarea  id="message"></textarea>
+                  </label>
+               </div>
+                <div class="question">
+                  <p>What do you interact with Vasiti as?</p>
+                  <input type="radio"   id='vendor'  value='vendor' name="role" required>
+                  <label class="tag">Vendor</label>
+                  <input type="radio" value='customer'  id='customer' name="role" required>
+                  <label class="tag">Customer</label>
               </div>
-              <div class="flow">
-                <label class="small3">
-                  Share your story
-                 <textarea  id="message"></textarea>
-                </label>
-             </div>
-              <div class="question">
-                <p>What do you interact with Vasiti as?</p>
-                <input type="radio">
-                <label class="tag">Customer</label>
-                <input type="radio">
-                <label class="tag">Vendor</label>
+              <button class="modal-btn">Share your story!</button>
             </div>
-            <button class="modal-btn">Share your story!</button>
-          </div> 
+              </form>
+
           <!-- <div class="second-Modal-Card">
-             <img class="baloons" src="/Images/ThankyouImg.svg" alt="Celebratory_Imaage" />
+             <img class="baloons" src="./Images/ThankyouImg.svg" alt="Celebratory_Imaage" />
              <h5>Thank you for <br> sharing your story!</h5>
              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas excepturi reprehenderit autem eum quia natus? Dolores molestias voluptate est facilis magni.</p>
              <button>close</button>
           </div>-->
-        </div> 
+        </div>
         <!--modal section---->
        <section class="hero-section">
             <div class="notes">
@@ -106,66 +109,66 @@
                  you can share your stories with us too.</p>
             </div>
             <div class="image">
-              <img class="hero-img" src="/Images/Testimonial-image-hero.svg" alt="Customers_Image"/>
+              <img class="hero-img" src="./Images/Testimonial-image-hero.svg" alt="Customers_Image"/>
             </div>
         </section>
          <section>
             <div class="stories">
                 <div class="pic">
-                    <img class="circle" src="/Images/circle-behind-tolu.svg" alt="circle_silhouette"/>
-                    <img class="tolu" src="/Images/tolu&joy.svg" alt="happy_customers"/>
+                    <img class="circle" src="./Images/circle-behind-tolu.svg" alt="circle_silhouette"/>
+                    <img class="tolu" src="./Images/tolu&joy.svg" alt="happy_customers"/>
                 </div>
                 <div class="TJ">
                     <h4>Tolu & Joy’s Experience</h4>
                     <button>customer</button>
-                    <p class="graph">I had the best experience shopping with vasiti. 
+                    <p class="graph">I had the best experience shopping with vasiti.
                      Usability of the website was great, very good customer service,
-                     an all round great experience. I would definately be coming back! 
-                    I had the best experience shopping with vasiti. Usability of the website was great, 
+                     an all round great experience. I would definately be coming back!
+                    I had the best experience shopping with vasiti. Usability of the website was great,
                     very good customer service, an all round great experience.
                      I would definately be coming back!</p>
                      <p class="share">Share your own story!</p>
-                     <img class="line" src="/Images/lineunderneth.svg" alt="line">
+                     <img class="line" src="./Images/lineunderneth.svg" alt="line">
                 </div>
             </div>
        </section>
          <section>
             <div class="testimonies">
               <div class="unwrapped-card">
-                <img class="profile-img" src="/Images/joseph Ike.svg" alt="Joseph's_Image"/>
+                <img class="profile-img" src="./Images/joseph Ike.svg" alt="Joseph's_Image"/>
                 <p class="name">Joseph Ike</p>
                 <p class="location">In Ikeja <span><button>customer</button></span></p>
-                <p class="about">Aliqua id fugiat nostrud irure 
-                    ex duis ea quis id quis ad et. Sunt qui esse pariatur 
-                    duis deserunt mollit dolore cillum minim tempor enim. 
+                <p class="about">Aliqua id fugiat nostrud irure
+                    ex duis ea quis id quis ad et. Sunt qui esse pariatur
+                    duis deserunt mollit dolore cillum minim tempor enim.
                     Elit aute irure tempor cupidatat incididunt sint deserunt
-                     ut voluptate aute id deserunt nisi. Aliqua id fugiat 
+                     ut voluptate aute id deserunt nisi. Aliqua id fugiat
                      nostrud irure ex duis ea quis id quis ad et.
                      Sunt qui esse pariatur duis deserunt
                      mollit dolore cillum minim tempor enim.</p>
               </div>
               <div class="unwrapped-card">
-                <img class="profile-img" src="/Images/Adetola.svg" alt="Adetola's_Image"/>
+                <img class="profile-img" src="./Images/Adetola.svg" alt="Adetola's_Image"/>
                 <p class="name">Adetola Fashina</p>
                 <p class="location">Ibadan <span><button>customer</button></span></p>
-                <p class="about">Aliqua id fugiat nostrud irure 
-                    ex duis ea quis id quis ad et. Sunt qui esse pariatur 
-                    duis deserunt mollit dolore cillum minim tempor enim. 
+                <p class="about">Aliqua id fugiat nostrud irure
+                    ex duis ea quis id quis ad et. Sunt qui esse pariatur
+                    duis deserunt mollit dolore cillum minim tempor enim.
                     Elit aute irure tempor cupidatat incididunt sint deserunt
-                     ut voluptate aute id deserunt nisi. Aliqua id fugiat 
+                     ut voluptate aute id deserunt nisi. Aliqua id fugiat
                      nostrud irure ex duis ea quis id quis ad et.
                      Sunt qui esse pariatur duis deserunt
                      mollit dolore cillum minim tempor enim.</p>
               </div>
               <div class="unwrapped-card">
-                <img class="profile-img" src="/Images/EmmanuelFayemi.svg" alt="Emmanuel's_Image"/>
+                <img class="profile-img" src="./Images/EmmanuelFayemi.svg" alt="Emmanuel's_Image"/>
                 <p class="name">Emmanuel Fayemi</p>
                 <p class="location">In Akoka <span><button>customer</button></span></p>
-                <p class="about">Aliqua id fugiat nostrud irure 
-                    ex duis ea quis id quis ad et. Sunt qui esse pariatur 
-                    duis deserunt mollit dolore cillum minim tempor enim. 
+                <p class="about">Aliqua id fugiat nostrud irure
+                    ex duis ea quis id quis ad et. Sunt qui esse pariatur
+                    duis deserunt mollit dolore cillum minim tempor enim.
                     Elit aute irure tempor cupidatat incididunt sint deserunt
-                     ut voluptate aute id deserunt nisi. Aliqua id fugiat 
+                     ut voluptate aute id deserunt nisi. Aliqua id fugiat
                      nostrud irure ex duis ea quis id quis ad et.
                      Sunt qui esse pariatur duis deserunt
                      mollit dolore cillum minim tempor enim.</p>
@@ -175,104 +178,104 @@
        <section>
             <div class="testimonies">
                 <div class="unwrapped-card">
-                    <img class="profile-img" src="/Images/ChisomObilor.svg" alt="Chisom's_Image"/>
+                    <img class="profile-img" src="./Images/ChisomObilor.svg" alt="Chisom's_Image"/>
                     <p class="name">Chisom Obilor</p>
                     <p class="location2">In Magodo <span><button>vendor</button></span></p>
-                    <p class="about">Aliqua id fugiat nostrud irure 
-                        ex duis ea quis id quis ad et. Sunt qui esse pariatur 
-                        duis deserunt mollit dolore cillum minim tempor enim. 
+                    <p class="about">Aliqua id fugiat nostrud irure
+                        ex duis ea quis id quis ad et. Sunt qui esse pariatur
+                        duis deserunt mollit dolore cillum minim tempor enim.
                         Elit aute irure tempor cupidatat incididunt sint deserunt
-                         ut voluptate aute id deserunt nisi. Aliqua id fugiat 
+                         ut voluptate aute id deserunt nisi. Aliqua id fugiat
                          nostrud irure ex duis ea quis id quis ad et.
                          Sunt qui esse pariatur duis deserunt
                          mollit dolore cillum minim tempor enim.</p>
                 </div>
                 <div class="unwrapped-card">
-                    <img class="profile-img" src="/Images/AdunoluwaAdeyemi.svg" alt="Adeyemi's_Image"/>
+                    <img class="profile-img" src="./Images/AdunoluwaAdeyemi.svg" alt="Adeyemi's_Image"/>
                     <p class="name">Adunoluwa Adeyemi</p>
                     <p class="location2">Iwo Road <span><button>vendor</button></span></p>
-                    <p class="about">Aliqua id fugiat nostrud irure 
-                        ex duis ea quis id quis ad et. Sunt qui esse pariatur 
-                        duis deserunt mollit dolore cillum minim tempor enim. 
+                    <p class="about">Aliqua id fugiat nostrud irure
+                        ex duis ea quis id quis ad et. Sunt qui esse pariatur
+                        duis deserunt mollit dolore cillum minim tempor enim.
                         Elit aute irure tempor cupidatat incididunt sint deserunt
-                         ut voluptate aute id deserunt nisi. Aliqua id fugiat 
+                         ut voluptate aute id deserunt nisi. Aliqua id fugiat
                          nostrud irure ex duis ea quis id quis ad et.
                          Sunt qui esse pariatur duis deserunt
                          mollit dolore cillum minim tempor enim.</p>
                 </div>
                 <div class="unwrapped-card">
-                    <img class="profile-img" src="/Images/ChidiOkeke.svg" alt="Chidi's_Image"/>
+                    <img class="profile-img" src="./Images/ChidiOkeke.svg" alt="Chidi's_Image"/>
                     <p class="name">Chidi Okeke</p>
                     <p class="location2">In Somolu <span><button>vendor</button></span></p>
-                    <p class="about">Aliqua id fugiat nostrud irure 
-                        ex duis ea quis id quis ad et. Sunt qui esse pariatur 
-                        duis deserunt mollit dolore cillum minim tempor enim. 
+                    <p class="about">Aliqua id fugiat nostrud irure
+                        ex duis ea quis id quis ad et. Sunt qui esse pariatur
+                        duis deserunt mollit dolore cillum minim tempor enim.
                         Elit aute irure tempor cupidatat incididunt sint deserunt
-                         ut voluptate aute id deserunt nisi. Aliqua id fugiat 
+                         ut voluptate aute id deserunt nisi. Aliqua id fugiat
                          nostrud irure ex duis ea quis id quis ad et.
                          Sunt qui esse pariatur duis deserunt
                          mollit dolore cillum minim tempor enim.</p>
                 </div>
             </div>
-        </section> 
+        </section>
       <section>
             <div class="experience">
                <div class="tails">
                 <h5>Josiah’s Experience</h5>
                 <button>vendor</button>
                 <p class="talk">I had the best experience shopping with vasiti.
-                 Usability of the website was great, very good 
-                 customer service, an all round great experience. 
-                 I would definately be coming back! I had the best 
+                 Usability of the website was great, very good
+                 customer service, an all round great experience.
+                 I would definately be coming back! I had the best
                  experience shopping with vasiti. Usability of the
-                  website was great, very good customer service, 
+                  website was great, very good customer service,
                   an all round great experience.
                    I would definately be coming back!</p>
                    <p class="own">Share your own story!</p>
-                   <img class="second-line" src="/Images/lineunderneth.svg" alt="line"/>
+                   <img class="second-line" src="./Images/lineunderneth.svg" alt="line"/>
                </div>
                <div class="experience-img">
-                 <img class="expo-img" src="/Images/woman-shoppingbag-card.svg" alt="happy_customer_image"/>
+                 <img class="expo-img" src="./Images/woman-shoppingbag-card.svg" alt="happy_customer_image"/>
                </div>
             </div>
         </section>
           <section>
             <div class="testimonies">
                 <div class="unwrapped-cards">
-                    <img class="profile-img" src="/Images/TemiObadofin.svg" alt="Temi's_Image"/>
+                    <img class="profile-img" src="./Images/TemiObadofin.svg" alt="Temi's_Image"/>
                     <p class="name">Temi Obadofin</p>
                     <button class="locate">vendor</button>
-                    <p class="about">Aliqua id fugiat nostrud irure 
-                        ex duis ea quis id quis ad et. Sunt qui esse pariatur 
-                        duis deserunt mollit dolore cillum minim tempor enim. 
+                    <p class="about">Aliqua id fugiat nostrud irure
+                        ex duis ea quis id quis ad et. Sunt qui esse pariatur
+                        duis deserunt mollit dolore cillum minim tempor enim.
                         Elit aute irure tempor cupidatat incididunt sint deserunt
-                         ut voluptate aute id deserunt nisi. Aliqua id fugiat 
+                         ut voluptate aute id deserunt nisi. Aliqua id fugiat
                          nostrud irure ex duis ea quis id quis ad et.
                          Sunt qui esse pariatur duis deserunt
                          mollit dolore cillum minim tempor enim.</p>
                 </div>
                 <div class="unwrapped-cards">
-                    <img class="profile-img" src="/Images/promiseEjiofor.svg" alt="Ejiofor's_Image"/>
+                    <img class="profile-img" src="./Images/promiseEjiofor.svg" alt="Ejiofor's_Image"/>
                     <p class="name">Promise Ejiofor</p>
                     <button class="locate">vendor</button>
-                    <p class="about">Aliqua id fugiat nostrud irure 
-                        ex duis ea quis id quis ad et. Sunt qui esse pariatur 
-                        duis deserunt mollit dolore cillum minim tempor enim. 
+                    <p class="about">Aliqua id fugiat nostrud irure
+                        ex duis ea quis id quis ad et. Sunt qui esse pariatur
+                        duis deserunt mollit dolore cillum minim tempor enim.
                         Elit aute irure tempor cupidatat incididunt sint deserunt
-                         ut voluptate aute id deserunt nisi. Aliqua id fugiat 
+                         ut voluptate aute id deserunt nisi. Aliqua id fugiat
                          nostrud irure ex duis ea quis id quis ad et.
                          Sunt qui esse pariatur duis deserunt
                          mollit dolore cillum minim tempor enim.</p>
                 </div>
                 <div class="unwrapped-cards">
-                    <img class="profile-img" src="/Images/FeyisolaArinola.svg" alt="Feyisola's_Image"/>
+                    <img class="profile-img" src="./Images/FeyisolaArinola.svg" alt="Feyisola's_Image"/>
                     <p class="name">Feyisola Arinola</p>
                     <button class="locate">vendor</button>
-                    <p class="about">Aliqua id fugiat nostrud irure 
-                        ex duis ea quis id quis ad et. Sunt qui esse pariatur 
-                        duis deserunt mollit dolore cillum minim tempor enim. 
+                    <p class="about">Aliqua id fugiat nostrud irure
+                        ex duis ea quis id quis ad et. Sunt qui esse pariatur
+                        duis deserunt mollit dolore cillum minim tempor enim.
                         Elit aute irure tempor cupidatat incididunt sint deserunt
-                         ut voluptate aute id deserunt nisi. Aliqua id fugiat 
+                         ut voluptate aute id deserunt nisi. Aliqua id fugiat
                          nostrud irure ex duis ea quis id quis ad et.
                          Sunt qui esse pariatur duis deserunt
                          mollit dolore cillum minim tempor enim.</p>
@@ -282,40 +285,40 @@
           <section>
             <div class="testimonies">
                 <div class="unwrapped-cards">
-                    <img class="profile-img" src="/Images/KarenIbeh.svg" alt="Karen's_Image"/>
+                    <img class="profile-img" src="./Images/KarenIbeh.svg" alt="Karen's_Image"/>
                     <p class="name">Karen Ibeh</p>
                     <button class="locate">vendor</button>
-                    <p class="about">Aliqua id fugiat nostrud irure 
-                        ex duis ea quis id quis ad et. Sunt qui esse pariatur 
-                        duis deserunt mollit dolore cillum minim tempor enim. 
+                    <p class="about">Aliqua id fugiat nostrud irure
+                        ex duis ea quis id quis ad et. Sunt qui esse pariatur
+                        duis deserunt mollit dolore cillum minim tempor enim.
                         Elit aute irure tempor cupidatat incididunt sint deserunt
-                         ut voluptate aute id deserunt nisi. Aliqua id fugiat 
+                         ut voluptate aute id deserunt nisi. Aliqua id fugiat
                          nostrud irure ex duis ea quis id quis ad et.
                          Sunt qui esse pariatur duis deserunt
                          mollit dolore cillum minim tempor enim.</p>
                 </div>
                 <div class="unwrapped-cards">
-                    <img class="profile-img" src="/Images/OluchiUzo.svg" alt="Oluchi's_Image"/>
+                    <img class="profile-img" src="./Images/OluchiUzo.svg" alt="Oluchi's_Image"/>
                     <p class="name">Oluchi Uzo</p>
                     <button class="locate">vendor</button>
-                    <p class="about">Aliqua id fugiat nostrud irure 
-                        ex duis ea quis id quis ad et. Sunt qui esse pariatur 
-                        duis deserunt mollit dolore cillum minim tempor enim. 
+                    <p class="about">Aliqua id fugiat nostrud irure
+                        ex duis ea quis id quis ad et. Sunt qui esse pariatur
+                        duis deserunt mollit dolore cillum minim tempor enim.
                         Elit aute irure tempor cupidatat incididunt sint deserunt
-                         ut voluptate aute id deserunt nisi. Aliqua id fugiat 
+                         ut voluptate aute id deserunt nisi. Aliqua id fugiat
                          nostrud irure ex duis ea quis id quis ad et.
                          Sunt qui esse pariatur duis deserunt
                          mollit dolore cillum minim tempor enim.</p>
                 </div>
                 <div class="unwrapped-cards">
-                    <img class="profile-img" src="/Images/AmosOkafor.svg" alt="Amos's_Image"/>
+                    <img class="profile-img" src="./Images/AmosOkafor.svg" alt="Amos's_Image"/>
                     <p class="name">Amos Okafor</p>
                     <button class="locate">vendor</button>
-                    <p class="about">Aliqua id fugiat nostrud irure 
-                        ex duis ea quis id quis ad et. Sunt qui esse pariatur 
-                        duis deserunt mollit dolore cillum minim tempor enim. 
+                    <p class="about">Aliqua id fugiat nostrud irure
+                        ex duis ea quis id quis ad et. Sunt qui esse pariatur
+                        duis deserunt mollit dolore cillum minim tempor enim.
                         Elit aute irure tempor cupidatat incididunt sint deserunt
-                         ut voluptate aute id deserunt nisi. Aliqua id fugiat 
+                         ut voluptate aute id deserunt nisi. Aliqua id fugiat
                          nostrud irure ex duis ea quis id quis ad et.
                          Sunt qui esse pariatur duis deserunt
                          mollit dolore cillum minim tempor enim.</p>
@@ -325,15 +328,15 @@
           <footer>
             <div class="upper-foot">
                <div class="foot-img">
-                <img class="phone" src="/Images/subscribe-banner.svg" alt="Cell_phone_img"/>
+                <img class="phone" src="./Images/subscribe-banner.svg" alt="Cell_phone_img"/>
                </div>
                <div class="member">
                  <p class="community">Be a member of our community🎉</p>
                  <p class="we">We’d make sure you’re always first to know what’s happening on Vasiti—thus, the world.</p>
                  <input class="typein" type="email" placeholder="enter your email address" required><span><button class="tag-click">Subscribe</button></span>
-               </div> 
+               </div>
             </div>
-         
+
           <div class="lower-foot">
             <div class="footBreak">
               <div class="ft1">
@@ -355,7 +358,7 @@
                    <li>Services</li>
                  </ul>
              </div>
-            </div> 
+            </div>
             <div class="footbreak2">
              <div class="ft3">
                  <ul>
@@ -378,15 +381,104 @@
           </div>
            <div class="footer-last">
                 <p class="our">Join our community</p>
-                <a href="https://www.facebook.com"><img class="socials" src="/Images/fb.svg" alt="facebook_logo"/></a>
-                <a href="https://www.instagram.com"><img class="socials" src="/Images/ig.svg" alt="instagram_logo"/></a>
-                <a href="https://www.twitter.com"><img class="socials" src="/Images/tw.svg" alt="twitter_logo"/></a>
-                <a href="https://www.linkedin.com"><img class="socials" src="/Images/in.svg" alt="linkedin_logo"/></a>
+                <a href="https://www.facebook.com"><img class="socials" src="./Images/fb.svg" alt="facebook_logo"/></a>
+                <a href="https://www.instagram.com"><img class="socials" src="./Images/ig.svg" alt="instagram_logo"/></a>
+                <a href="https://www.twitter.com"><img class="socials" src="./Images/tw.svg" alt="twitter_logo"/></a>
+                <a href="https://www.linkedin.com"><img class="socials" src="./Images/in.svg" alt="linkedin_logo"/></a>
                 <p class="mail">Email Newsletter</p>
            </div>
         </div>
-    </footer> 
-    <script src="/script.js" type="module"></script>
-    <!-- <script src="https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js"></script> -->
+    </footer>
+    <script src="./script.js"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyDE8EhgfZT1xByhWNa8EYPKV-Z5XcK4DOo",
+        authDomain: "collins-42a04.firebaseapp.com",
+        projectId: "collins-42a04",
+        storageBucket: "collins-42a04.appspot.com",
+        messagingSenderId: "721906493883",
+        appId: "1:721906493883:web:27b97660fa12cd7c46fc9e"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+import { getFirestore, getDocs, addDoc , collection } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js"
+const db = getFirestore(app)
+const collectionRef = collection(db, "collins");
+
+// References
+let firstName = document.querySelector("#firstname")
+let lastName = document.querySelector("#lastname")
+let message = document.querySelector("#message")
+let role = document.getElementsByName("role")
+const pic = document.querySelector("#InputTag")
+const sendBtn = document.querySelector(".modal-btn")
+const myForm = document.querySelector("#myForm")
+const myModal = document.getElementById("myModal"); // get the modaal
+let selectedRole;
+let updatedImage;
+const testimonies = []
+firstReview = testimonies.slice(0, 6)
+secondReview = testimonies.slice(6, testimonies.length)
+
+for (let i = 0; i < role.length; i++) {
+  role[i].addEventListener("click", function() {
+    selectedRole = this.value
+  });
+}
+
+pic.addEventListener("change", ()=>{
+  const file  = pic.files[0];
+  const reader = new FileReader();
+  reader.readAsDataURL(file);
+  reader.onloadend = () => {
+      updatedImage = reader.result;
+    };
+})
+
+myForm.addEventListener("submit", function(e){
+e.preventDefault();    //stop form from submitting
+
+  	//do whatever an submit the form
+    try{
+      addDoc(collectionRef, {
+      firstName:firstName.value,
+      lastName: lastName.value,
+      message: message.value,
+      pic: updatedImage,
+      role: selectedRole,
+    }).then((res)=>{
+      myForm.reset()
+      myModal.style.display = "none";
+      // make success modal have a display block.
+    })
+    }catch(err){
+      console.log(err);
+    }
+
+
+});
+
+// call a function for n close of the new modal when the exit button is clicked.
+
+const getTestimonies = async () => {
+      const data = await getDocs(collectionRef);
+      console.log(data, 'DATA');
+ testimonies = data?.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
+    };
+
+    firstReview?.map((testimony)=>{
+      return (
+
+      )
+    })
+
+    </script>
   </body>
 </html>
