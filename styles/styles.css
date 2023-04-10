@@ -552,12 +552,16 @@ li:hover {
 #firstname,
 #lastname {
   margin-top: 5px;
+  margin-right: 4px;
   height: 30px;
+  text-indent: 5px;
 }
 
 #message {
   margin-top: 5px;
   height: 30px;
+  text-indent: 5px;
+  padding-top: 3px;
 }
 
 .flow {
