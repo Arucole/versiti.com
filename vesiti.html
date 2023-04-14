@@ -94,12 +94,12 @@
             </div>
               </form>
 
-          <!-- <div class="second-Modal-Card">
+          <div class="second-Modal-Card">
              <img class="baloons" src="./Images/ThankyouImg.svg" alt="Celebratory_Imaage" />
              <h5>Thank you for <br> sharing your story!</h5>
              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas excepturi reprehenderit autem eum quia natus? Dolores molestias voluptate est facilis magni.</p>
              <button>close</button>
-          </div>-->
+          </div>
         </div>
         <!--modal section---->
        <section class="hero-section">
@@ -333,7 +333,7 @@
                <div class="member">
                  <p class="community">Be a member of our community🎉</p>
                  <p class="we">We’d make sure you’re always first to know what’s happening on Vasiti—thus, the world.</p>
-                 <input class="typein" type="email" placeholder="enter your email address" required><span><button class="tag-click">Subscribe</button></span>
+                 <input class="typein" type="email" placeholder="enter your email address" required><span><button class="tag-click" href="https://www.gmail.com" target="_blank">Subscribe</button></span>
                </div>
             </div>
 
@@ -381,103 +381,165 @@
           </div>
            <div class="footer-last">
                 <p class="our">Join our community</p>
-                <a href="https://www.facebook.com"><img class="socials" src="./Images/fb.svg" alt="facebook_logo"/></a>
-                <a href="https://www.instagram.com"><img class="socials" src="./Images/ig.svg" alt="instagram_logo"/></a>
-                <a href="https://www.twitter.com"><img class="socials" src="./Images/tw.svg" alt="twitter_logo"/></a>
-                <a href="https://www.linkedin.com"><img class="socials" src="./Images/in.svg" alt="linkedin_logo"/></a>
+                <a href="https://www.facebook.com" target="_blank"><img class="socials" src="./Images/fb.svg" alt="facebook_logo"/></a>
+                <a href="https://www.instagram.com" target="_blank"><img class="socials" src="./Images/ig.svg" alt="instagram_logo"/></a>
+                <a href="https://www.twitter.com" target="_blank"><img class="socials" src="./Images/tw.svg" alt="twitter_logo"/></a>
+                <a href="https://www.linkedin.com" target="_blank"><img class="socials" src="./Images/in.svg" alt="linkedin_logo"/></a>
                 <p class="mail">Email Newsletter</p>
            </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.20.0/firebase.js"></script>
     <script src="./script.js"></script>
     <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
 
-      // Your web app's Firebase configuration
-      const firebaseConfig = {
-        apiKey: "AIzaSyDE8EhgfZT1xByhWNa8EYPKV-Z5XcK4DOo",
-        authDomain: "collins-42a04.firebaseapp.com",
-        projectId: "collins-42a04",
-        storageBucket: "collins-42a04.appspot.com",
-        messagingSenderId: "721906493883",
-        appId: "1:721906493883:web:27b97660fa12cd7c46fc9e"
-      };
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCaB2CDbh_TeyPg3C6W-isYNt8l1pHG-PE",
+    authDomain: "versitiagain.firebaseapp.com",
+    databaseURL: "https://versitiagain-default-rtdb.firebaseio.com",
+    projectId: "versitiagain",
+    storageBucket: "versitiagain.appspot.com",
+    messagingSenderId: "499243619467",
+    appId: "1:499243619467:web:956a6cf020add1fc6f308e",
+    measurementId: "G-82XXV6NFXJ"
+  };
 
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-import { getFirestore, getDocs, addDoc , collection } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js"
-const db = getFirestore(app)
-const collectionRef = collection(db, "collins");
+  // Initialize firebase
+  firebase.initializeApp(firebaseConfig);
 
-// References
-let firstName = document.querySelector("#firstname")
-let lastName = document.querySelector("#lastname")
-let message = document.querySelector("#message")
-let role = document.getElementsByName("role")
-const pic = document.querySelector("#InputTag")
-const sendBtn = document.querySelector(".modal-btn")
-const myForm = document.querySelector("#myForm")
-const myModal = document.getElementById("myModal"); // get the modaal
-let selectedRole;
-let updatedImage;
-const testimonies = []
-firstReview = testimonies.slice(0, 6)
-secondReview = testimonies.slice(6, testimonies.length)
+  // Reference your database
+  let VersitiAgainDB = firebase.database().ref('versitiAgain');
 
-for (let i = 0; i < role.length; i++) {
-  role[i].addEventListener("click", function() {
-    selectedRole = this.value
-  });
-}
+  // References
+ let firstName = document.querySelector("#firstname")
+ let lastName = document.querySelector("#lastname")
+ let message = document.querySelector("#message")
+ let role = document.getElementsByName("role")
+ const pic = document.querySelector("#InputTag")
+ const sendBtn = document.querySelector(".modal-btn")
+ const myForm = document.querySelector("#myForm")
+ const modalTwo = document.querySelector(".second-Modal-card")
+ const myModal = document.getElementById("myModal"); // get the modaal
+ let selectedRole;
+ let updatedImage;
+ //const testimonies = []
+ //firstReview = testimonies.slice(0, 6)
+//secondReview = testimonies.slice(6, testimonies.length)
 
-pic.addEventListener("change", ()=>{
-  const file  = pic.files[0];
-  const reader = new FileReader();
-  reader.readAsDataURL(file);
-  reader.onloadend = () => {
-      updatedImage = reader.result;
-    };
-})
+
 
 myForm.addEventListener("submit", function(e){
 e.preventDefault();    //stop form from submitting
 
-  	//do whatever an submit the form
-    try{
+   	//do whatever and submit the form
+        try{
       addDoc(collectionRef, {
-      firstName:firstName.value,
-      lastName: lastName.value,
-      message: message.value,
-      pic: updatedImage,
-      role: selectedRole,
-    }).then((res)=>{
-      myForm.reset()
-      myModal.style.display = "none";
-      // make success modal have a display block.
-    })
-    }catch(err){
-      console.log(err);
-    }
+       firstName:firstName.value,
+       lastName: lastName.value,
+       message: message.value,
+       pic: updatedImage,
+       role: selectedRole,
+       }).then((res)=>{
+       myForm.reset()
+       myModal.style.display = "none";
+       // make success modal have a display block.
+     })
+     }catch(err){
+       console.log(err);
+     }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ });
+//       // Import the functions you need from the SDKs you need
+//       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+//       // TODO: Add SDKs for Firebase products that you want to use
+//       // https://firebase.google.com/docs/web/setup#available-libraries
+
+//       // Your web app's Firebase configuration
+//       const firebaseConfig = {
+//         apiKey: "AIzaSyDE8EhgfZT1xByhWNa8EYPKV-Z5XcK4DOo",
+//         authDomain: "collins-42a04.firebaseapp.com",
+//         projectId: "collins-42a04",
+//         storageBucket: "collins-42a04.appspot.com",
+//         messagingSenderId: "721906493883",
+//         appId: "1:721906493883:web:27b97660fa12cd7c46fc9e"
+//       };
+
+//       // Initialize Firebase
+//       const app = initializeApp(firebaseConfig);
+// import { getFirestore, getDocs, addDoc , collection } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js"
+// const db = getFirestore(app)
+// const collectionRef = collection(db, "collins");
+
+// // References
+// let firstName = document.querySelector("#firstname")
+// let lastName = document.querySelector("#lastname")
+// let message = document.querySelector("#message")
+// let role = document.getElementsByName("role")
+// const pic = document.querySelector("#InputTag")
+// const sendBtn = document.querySelector(".modal-btn")
+// const myForm = document.querySelector("#myForm")
+// const modalTwo = document.querySelector(".second-Modal-card")
+// const myModal = document.getElementById("myModal"); // get the modaal
+// let selectedRole;
+// let updatedImage;
+// const testimonies = []
+// firstReview = testimonies.slice(0, 6)
+// secondReview = testimonies.slice(6, testimonies.length)
+
+// for (let i = 0; i < role.length; i++) {
+//   role[i].addEventListener("click", function() {
+//     selectedRole = this.value
+//   });
+// }
+
+// pic.addEventListener("change", ()=>{
+//   const file  = pic.files[0];
+//   const reader = new FileReader();
+//   reader.readAsDataURL(file);
+//   reader.onloadend = () => {
+//       updatedImage = reader.result;
+//     };
+// })
+
+// myForm.addEventListener("submit", function(e){
+// e.preventDefault();    //stop form from submitting
+
+//   	//do whatever an submit the form
+//     try{
+//       addDoc(collectionRef, {
+//       firstName:firstName.value,
+//       lastName: lastName.value,
+//       message: message.value,
+//       pic: updatedImage,
+//       role: selectedRole,
+//     }).then((res)=>{
+//       myForm.reset()
+//       myModal.style.display = "none";
+//       // make success modal have a display block.
+//     })
+//     }catch(err){
+//       console.log(err);
+//     }
 
 
-});
+// });
 
-// call a function for n close of the new modal when the exit button is clicked.
+// // call a function for n close of the new modal when the exit button is clicked.
 
-const getTestimonies = async () => {
-      const data = await getDocs(collectionRef);
-      console.log(data, 'DATA');
- testimonies = data?.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
-    };
+// const getTestimonies = async () => {
+//       const data = await getDocs(collectionRef);
+//       console.log(data, 'DATA');
+//  testimonies = data?.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
+//     };
 
-    firstReview?.map((testimony)=>{
-      return (
-
-      )
-    })
+//     firstReview?.map((testimony)=>{
+//       return (
+         
+//       )
+//     })
 
     </script>
   </body>

@@ -16,7 +16,7 @@ hamburger.addEventListener("click", () => {
 // hamburger remove
 document.querySelectorAll(".nav-list").forEach((n) =>
   n.addEventListener("click", () => {
-    hamburger.classList.remove("active");
+    hamburger.style.display("none");
   })
 );
 
@@ -36,8 +36,8 @@ closeBtn.addEventListener("click", () => {
 // };
 
 // close window event button
-window.addEventListener("click", (event) => {
-  if (event.target == !myModal) {
-    myModal.style.display = "none";
-  }
-});
+// window.onclick = function (event) {
+//   if (event.target == myModal) {
+//     myModal.style.display = "none";
+//   }
+// };

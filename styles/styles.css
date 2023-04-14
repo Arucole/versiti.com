@@ -503,6 +503,7 @@ li:hover {
   overflow: auto; /*-Enable scroll if needed-*/
   background-color: rgb(0, 0, 0); /*-fallback color-*/
   background-color: rgba(0, 0, 0, 0.5); /*-back w/ opacity-*/
+  z-index: 5;
 }
 
 .modal-card {
@@ -653,4 +654,8 @@ li:hover {
   font-size: 14px;
   font-weight: 600;
   padding: 5px auto;
+}
+
+.second-Modal-Card {
+  display: none;
 }
